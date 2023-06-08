@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcularoda de IMC</title>
+</head>
+<body>
+    <main>
+        <h1>Cálculo IMC</h1>
+        <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+        <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+        <p>Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+
+        <div class="input-calc">
+            <span>Altura <small>(ex: 1,70)</small></span>
+            <input type="number" placeholder="Metros" id="altura">
+        </div>
+        <div class="input-calc">
+            <span>Peso <small>(ex: 75,4)</small></span>
+            <input type="number" placeholder="Quilos" id="peso">
+        </div>
+
+        <div class="container-button">
+            <button class="button-calc" id="button-calc" onclick="calcular()">Calcular</button>
+            <button class="button-clean" id="button-clean">Limpar</button>
+        </div>
+
+        <table class="table-imc" id="table-imc">
+            <caption>
+                VEJA A INTERPRETAÇÃO DO IMC
+            </caption>
+            <tbody>
+                <tr>
+                    <th>IMC</th>
+                    <th>CLASSIFICAÇÃO</th>
+                    <th>OBESIDADE</th>
+                </tr>
+                <tr id="magreza">
+                    <td>MENOR QUE 18,5</td>
+                    <td>MAGREZA</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                <tr id="normal">
+                    <td>ENTRE 18,5 E 24,9</td>
+                    <td>NORMAL</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                <tr id="sobrepeso">
+                    <td>ENTRE 25,0 E 29,9</td>
+                    <td>SOBREPESO</td>
+                    <td style="text-align: center;">I</td>
+                </tr>
+                <tr id="obesidade">
+                    <td>ENTRE 30,0 E 39,9</td>
+                    <td>OBESIDADE</td>
+                    <td style="text-align: center;">II</td>
+                </tr>
+                <tr id="obesidadeGrave">
+                    <td>MAIOR QUE 40,0</td>
+                    <td>OBESIDADE GRAVE</td>
+                    <td style="text-align: center;">III</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="seu-imc" id="seu-imc">
+            <p>SEU IMC:</p> 
+            <span id="res-imc"></span>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

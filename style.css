@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: azure;
+}
+
+main {
+    width: 70vw;
+    height: 100%;
+    margin: auto;
+}
+
+h1 {
+    color: #1f5eaf;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+p {
+    margin: 20px 0;
+    justify-content: center;
+    line-height: 23px;
+}
+
+.input-calc {
+    display: inline-block;
+    flex-direction: column;
+}
+
+.input-calc span {
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+.input-calc input {
+    display: block;
+    width: 130px;
+    height: 35px;
+    font-size: 14px;
+    padding: 5px;
+    padding-left: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid #1f5eaf;
+}
+
+button {
+    padding: 15px 40px;
+    margin: 10px 0;
+    margin-right: 25px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-calc {
+    background-color: #1f5eaf;
+    color: white;
+}
+
+.button-clean {
+    background-color: orangered;
+    color: white;
+}
+
+
+/* FORMATAÇÃO TA TABELA */
+
+table {
+    border-spacing: 0;
+    margin-top: 20px;    
+    margin-bottom: 20px;
+}
+
+caption {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #1f5eaf;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+table th {
+    font-size: 14px;
+    color: #1f5eaf;
+    border-bottom: 1px solid #6666;
+    text-align: left;
+    padding: 10px 80px 10px 20px;
+}
+
+table td {
+    font-size: 14px;
+    color: #707070;
+    border-bottom: 1px solid #6666;
+    text-align: left;
+    padding: 10px 80px 10px 20px;
+}
+
+.seu-imc {
+    display: inline-flex;
+    align-items: center;
+    background-color: orangered;
+    color: white;
+    padding: 0 15px 0 15px;
+    border-radius: 20px;
+    height: 40px; 
+    font-size: 18px;  
+}
+
+.seu-imc {
+}
+
+.seu-imc span {
+    padding-left: 10px;
+}
