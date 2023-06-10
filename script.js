@@ -1,7 +1,7 @@
 function calcular() {
     var altura = document.getElementById("altura").value
     var peso = document.getElementById("peso").value
-    var imc = peso / altura**2
+    var imc = (peso / altura**2).toFixed(2) 
 
     var tr = document.getElementById("magreza")
     var tr = document.getElementById("normal")
@@ -11,12 +11,17 @@ function calcular() {
     
     var resimc = document.getElementById("res-imc")
 
-    if ( imc < 18.5) {
+    if(altura == '' || peso == ''){
+        window.alert("Erro! Preencha os campos.")
+        resimc.innerHTML = ''
+    }
+    else if ( imc < 18.5) {
         magreza.style.backgroundColor = "#bbd8ff77"
         normal.style.backgroundColor = "white"
         sobrepeso.style.backgroundColor = "white"
         obesidade.style.backgroundColor = "white"
         obesidadeGrave.style.backgroundColor = "white"
+        resimc.innerHTML = imc
     }
     else if (imc < 24.9) {
         magreza.style.backgroundColor = "white"
@@ -24,6 +29,7 @@ function calcular() {
         sobrepeso.style.backgroundColor = "white"
         obesidade.style.backgroundColor = "white"
         obesidadeGrave.style.backgroundColor = "white"
+        resimc.innerHTML = imc
     }
     else if (imc < 29.9) {
         magreza.style.backgroundColor = "white"
@@ -31,6 +37,7 @@ function calcular() {
         sobrepeso.style.backgroundColor = "#bbd8ff77"
         obesidade.style.backgroundColor = "white"
         obesidadeGrave.style.backgroundColor = "white"
+        resimc.innerHTML = imc
     }
     else if (imc < 39.9) {
         magreza.style.backgroundColor = "white"
@@ -38,7 +45,7 @@ function calcular() {
         sobrepeso.style.backgroundColor = "white"
         obesidade.style.backgroundColor = "#bbd8ff77"
         obesidadeGrave.style.backgroundColor = "white"
-        resimc.innerHTML = "ola"
+        resimc.innerHTML = imc
     }
     else if (imc > 40.0) {
         magreza.style.backgroundColor = "white"
@@ -46,8 +53,8 @@ function calcular() {
         sobrepeso.style.backgroundColor = "white"
         obesidade.style.backgroundColor = "white"
         obesidadeGrave.style.backgroundColor = "#bbd8ff77"
+        resimc.innerHTML = imc
     }
-    resimc.innerHTML = imc
 }
 
 function limpar() {
