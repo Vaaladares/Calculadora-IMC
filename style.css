@@ -129,3 +129,37 @@ table td {
     padding-left: 10px;
     
 }
+
+/* FORATAÇÃO VERSÃO MOBILE */
+
+@media screen and (max-width: 600px) {
+    
+    caption {
+        font-size: 10px;
+        font-weight: bold;
+        background-color: #1f5eaf;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    table th {
+        font-size: 10px;
+        color: #1f5eaf;
+        border-bottom: 1px solid #6666;
+        text-align: left;
+        padding: 10px 30px 10px 20px;
+    }
+    
+    table td {
+        font-size: 10px;
+        color: #707070;
+        border-bottom: 1px solid #6666;
+        text-align: left;
+        padding: 10px 30px 10px 20px;
+    }
+
+    .seu-imc {
+        font-size: 12px;
+    }
+}
