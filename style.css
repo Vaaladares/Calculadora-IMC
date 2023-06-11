@@ -152,17 +152,16 @@ table td {
     }
     
     table th {
-        font-size: 12px;
+        font-size: 11px;
         padding: 5px 10px 5px 10px;
     }
     
     table td {
-        font-size: 12px;
+        font-size: 11px;
         padding: 5px 10px 5px 10px;
     }
 
     .seu-imc {
-        fon
         font-size: 14px;
         font-weight: bold;
     }
