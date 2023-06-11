@@ -6,7 +6,7 @@
 }
 
 main {
-    width: 70vw;
+    width: 70%;
     height: 100%;
     margin: auto;
     margin-bottom: 20px;
@@ -19,6 +19,7 @@ h1 {
 }
 
 p {
+    color: #707070;
     margin: 20px 0;
     justify-content: center;
     line-height: 23px;
@@ -119,11 +120,14 @@ table td {
     display: inline-flex;
     align-items: center;
     background-color: orangered;
-    color: white;
     padding: 0 15px 0 15px;
     border-radius: 20px;
     height: 40px; 
     font-size: 18px;  
+}
+
+.seu-imc p {
+    color: white;
 }
 
 .seu-imc span {
@@ -133,7 +137,7 @@ table td {
 
 /* FORATAÇÃO VERSÃO MOBILE */
 
-@media screen and (min-width: 400px) and (max-width: 600px) {
+@media screen and (max-width: 500px) {
 
     main {
         width: 80vw;
@@ -147,13 +151,13 @@ table td {
     }
     
     table th {
-        font-size: 11px;
-        padding: 10px 20px 10px 20px;
+        font-size: 12px;
+        padding: 5px 10px 5px 10px;
     }
     
     table td {
-        font-size: 11px;
-        padding: 10px 20px 10px 20px;
+        font-size: 12px;
+        padding: 5px 10px 5px 10px;
     }
 
     .seu-imc {
