@@ -156,6 +156,7 @@ table td {
     }
 
     .seu-imc {
-        font-size: 12px;
+        font-size: 13px;
+        font-weight: bold;
     }
 }
