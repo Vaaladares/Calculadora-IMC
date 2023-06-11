@@ -133,29 +133,25 @@ table td {
 /* FORATAÇÃO VERSÃO MOBILE */
 
 @media screen and (max-width: 600px) {
+
+    main {
+        width: 80vw;
+        height: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
     
     caption {
-        font-size: 10px;
-        font-weight: bold;
-        background-color: #1f5eaf;
-        color: white;
-        padding: 10px;
-        border-radius: 10px;
+        font-size: 12px;
     }
     
     table th {
-        font-size: 10px;
-        color: #1f5eaf;
-        border-bottom: 1px solid #6666;
-        text-align: left;
+        font-size: 11px;
         padding: 10px 30px 10px 20px;
     }
     
     table td {
-        font-size: 10px;
-        color: #707070;
-        border-bottom: 1px solid #6666;
-        text-align: left;
+        font-size: 11px;
         padding: 10px 30px 10px 20px;
     }
 
