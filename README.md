@@ -1,2 +1,1 @@
-# Calculadora-IMC
- Calculadora de IMC 
+Calculadora de IMC (índice de massa corporal). Uma calculadora que traz o resultado se o seu índice de massa corporal está abixo, dentro ou acima do ideal. Muito util para controlar a sua saúde e também muito prático de usar.
